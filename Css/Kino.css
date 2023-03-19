@@ -1,0 +1,636 @@
+/*-------------------------------NASLOVNA------------------------*/
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    background-color: #000000;
+    overflow: hidden;
+    padding: 0 !important;
+    justify-content: flex-start !important;
+}
+
+.navbar a {
+    float: left;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: #0744af;
+}
+
+.navbar a.registracija {
+    float: right;
+    margin-left: auto;
+}
+
+.navbar a.active {
+    background-color: #0744af;
+    color: #ffffff;
+    float: left;
+    margin: 0%;
+}
+
+.navbar a.rezervacija {
+    float: left !important;
+}
+
+#ovaj_tjedan_prikazujemo {
+    color: #0744af;
+    margin: 0% 20%;
+    text-align: center;
+    word-spacing: 0.3em;
+    font-size: 2rem;
+}
+
+#app {
+    color: #0744af;
+    background-color: black;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    word-spacing: 0.3em;
+    font-size: 1rem;
+    margin-inline: auto;
+    width: 50%;
+}
+
+#naziv_filma {
+    color: #0744af;
+    text-align: center;
+    font-family: impact;
+    font-size: 2.2em;
+    background-color: black;
+    height: 5% auto;
+    margin: 0% 19% 0% 20%;
+    border-style: solid;
+    border-width: 0px 5px 5px;
+    letter-spacing: 0.2em;
+}
+
+.bgimg {
+    background-image: url("../Slike/naslovna.jpg");
+    background-size: cover;
+    height: 93.8%;
+    width: 100%;
+}
+
+#link_filma {
+    height: 50%;
+    width: 62%;
+    margin-inline: auto;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+#btn_rez_film_sada, button {
+    width: 20%;
+    margin: 7.5% 38% 0% 42%;
+    background-color: #0744af;
+    color: white;
+    text-align: center;
+    font-size: 100%;
+    padding: 2%;
+    border-radius: 3%;
+    border-color: black;
+}
+
+    button:hover {
+        color: black;
+        background-color: #285cb7;
+        cursor: pointer;
+    }
+
+@media(max-width: 375px) {
+    #rez_sada {
+        margin: 45% 10% 0% !important;
+    }
+
+    #btn_rez_film_sada {
+        margin: 10% 38% !important;
+        width: 30% !important;
+    }
+}
+
+/*-------------------------------------REGISTRACIJA-------------------------*/
+html.registracija {
+    width: 100%;
+    height: 100%;
+}
+
+body.registracija {
+    height: 100%;
+    width: 100%;
+    background-image: url("../Slike/registracija.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#unos_podataka {
+    text-align: center;
+    margin-top: 15%;
+}
+
+#naslov {
+    height: auto;
+    padding: 0.7%;
+    font-size: 1.5vw;
+    width: 30%;
+}
+
+#registracija {
+    padding: 0px;
+    height: 51px;
+}
+
+    #registracija > a {
+        overflow: hidden;
+        height: 51px auto;
+    }
+
+.podaci {
+    height: 52.8%;
+    width: 30%;
+    margin: 2% 20% 0% 37%;
+    text-align: center;
+}
+
+.checkbox {
+    font-family: verdana;
+    letter-spacing: 0.2em;
+    word-spacing: 0.1em;
+    text-shadow: 2px 0px 10px white;
+}
+
+#zapamti_me {
+    color: black;
+    background-color: black;
+    font-size: 130%;
+}
+
+#zapamti_moje_podatke {
+   padding-block: 5%;
+}
+
+#submit {
+    color: black;
+    background-color: white;
+    border-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+    #submit:hover {
+        color: white;
+        background-color: black;
+        border-color: white;
+    }
+
+a.rezervacija_reg {
+    float: right;
+}
+
+#tablica {
+    height: 100% auto;
+    width: 60%;
+    margin-left: 15%
+}
+
+div.form-group {
+    height: 15.5%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+#button-submit {
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    margin: 2% 25%;
+}
+
+#registriraj_se_txt {
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+}
+
+div#container-rezervacija {
+    height: 5%;
+    width: 100%;
+    padding: 0% 50%;
+    margin: 0%;
+}
+/*---------------------MOB REGISTRACIJA-----------------*/
+@media(max-width: 480px) {
+    #zapamti_me_text {
+        background-color: black;
+        opacity: 0.7
+    }
+
+    #tablica {
+        width: auto;
+        height: auto;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .podaci {
+        margin: auto;
+        width: 70%;
+    }
+
+    #naslov {
+        font-size: 1.3rem;
+        width: auto;
+    }
+}
+
+/*---------------------REZERVACIJA---------------------*/
+nav#rezervacija {
+    padding: 0;
+    height: 51px;
+}
+
+a#rez_active {
+    background-color: #8c0707;
+}
+
+    a#rez_active:hover {
+        color: black;
+    }
+
+a#rez_naslovna:hover {
+    color: #8c0707;
+}
+
+a#rez_registracija:hover {
+    color: #8c0707 !important;
+}
+
+#rezervacija_pozadina {
+    height: 79.6%;
+    width: 100%;
+    padding: 0;
+    background-image: url(../Slike/rezervacija.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-link:hover, .btn-link_nedjelja:hover {
+    color: #8c0707 !important;
+}
+
+.red_1, .red_2, .red_3, .red_4, .red_5, .red_6, .red_7, .red_8, .red_9, .red_10 {
+    opacity: 1;
+    width: 10%;
+}
+
+.special_seat_free {
+    background-color: #1259cc;
+    color: white;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: Pulsate 3s linear infinite;
+}
+
+    .special_seat_free:hover {
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+        opacity: 0.7;
+    }
+
+.love_seat_free {
+    background-color: #8c0707;
+    color: white;
+    opacity: 0.7;
+    border-radius: 50%;
+    animation: Pulsate 3s linear infinite;
+}
+
+@keyframes Pulsate {
+    from {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
+
+.love_seat_free:hover {
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+}
+
+.seat_free {
+    background-color: white;
+    color: black;
+    opacity: 0.5;
+    border-radius: 50%;
+    padding: 12px;
+    width: 6%;
+    animation: Pulsate 3s linear infinite;
+}
+
+    .seat_free:hover {
+        cursor: pointer;
+        background-color: #000000;
+        color: white;
+    }
+
+.sjedalo_odabrano {
+    background-color: #000000 !important;
+    color: white;
+    opacity: 1;
+    border-radius: 50%;
+    padding: 12px;
+    width: 6%;
+    animation: none;
+}
+
+    .sjedalo_odabrano:hover {
+        cursor: pointer;
+    }
+
+.sjedalo_zauzeto {
+    background-color: #8c0707;
+    color: white;
+    opacity: 0.5;
+    animation: none;
+}
+
+    .sjedalo_zauzeto:hover {
+        cursor: not-allowed;
+        opacity: 0.5;
+        background-color: #8c0707;
+    }
+
+.ljubavno_sjedalo_zauzeto {
+    background-color: gray;
+    color: white;
+    animation: none;
+    opacity: 0.5;
+}
+
+    .ljubavno_sjedalo_zauzeto:hover {
+        background-color: gray;
+        color: white;
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+
+th {
+    padding: 12px;
+}
+
+#rezerviraj_btn:hover {
+    background-color: #000000 !important;
+    color: #8c0707 !important;
+    border-color: #8c0707 !important;
+}
+
+.odabrano {
+    color: #8c0707 !important;
+}
+
+/*-----------------------------------MOBILE SIZE-----------------------------------*/
+@media(max-width: 480px) {
+    #tjedan {
+        height: 50% !important;
+    }
+
+    .dan {
+        height: 23% !important;
+    }
+
+    #col_dan {
+        width: 30% !important;
+        height: 30% !important;
+    }
+
+    #dat_vri {
+        height: 42% !important;
+    }
+
+    #col_dat_vri {
+        height: 100% !important;
+    }
+
+    #col_naz_filma {
+        height: 100% !important;
+        max-height: 100% !important;
+    }
+
+    #row_naz_filma {
+        height: 35% !important;
+    }
+
+    .btn-link {
+        padding: 4% !important;
+        font-size: 2.5vw !important;
+    }
+
+    .btn-link_nedjelja {
+        padding: 4% !important;
+        font-size: 4vw !important;
+    }
+
+    #rezervacija_pozadina {
+        height: 100% !important;
+    }
+
+    #row_tablica {
+        width: 100% !important;
+        height: 41% !important;
+        margin: 0 !important;
+    }
+
+    #col_dan_nedjelja {
+        height: 35% !important;
+        width: 50% !important;
+    }
+
+    th, td {
+        padding: 3px !important;
+    }
+
+    td {
+        width: 6.25% !important;
+    }
+
+    #sjed_1_ljubavno_slobodno, #sjed_2_ljubavno_slobodno, #sjed_3_ljubavno_slobodno {
+        width: 52px !important;
+    }
+
+    #objašnjenje_tablice {
+        width: 100% !important;
+        height: 8% !important;
+        margin-bottom: 2% !important;
+        padding-left: 5% !important;
+    }
+
+    #legenda_slobodno, #legenda_invalidi_slobodno, #legenda_zauzeto, #legenda_odabrano {
+        width: 15% !important;
+        margin-left: 5% !important;
+    }
+
+    #legenda_ljubavno {
+        width: 20% !important;
+        margin-left: 2% !important;
+    }
+
+    #slobodno, #zauzeto, #odabrano {
+        height: 80% !important;
+        width: 100% !important;
+        font-size: 2.5vw !important;
+        margin: 2% .5% 0% .5% !important;
+        padding-top: 30% !important;
+    }
+
+    #invalidi_slobodno {
+        height: 80% !important;
+        font-size: 2.2vw !important;
+        margin: 2% .5% 0% 0.5% !important;
+        padding-top: 23% !important;
+    }
+
+    #ljubavno_slobodno, #ljubavno_zauzeto {
+        height: 60% !important;
+        font-size: 2.3vw !important;
+        margin: 5% 0.5% 0% 12% !important;
+    }
+
+    #row_podaci {
+        height: 48.5% !important;
+        width: 100% !important;
+        margin: 1% 2% 1% 0% !important;
+    }
+
+    #rez_filma {
+        height: 100% !important;
+        float: right !important;
+        margin-left: 1% !important;
+    }
+
+    #poster_filma {
+        width: 100% !important;
+        height: 80% !important;
+        margin: 0% !important;
+    }
+
+    #poster_filma_slika {
+        width: 100% !important;
+        height: 40% !important;
+    }
+
+    #dat_vri_cijena {
+        height: 9% !important;
+        font-size: 3vw !important;
+    }
+
+    #glumci {
+        height: 10% !important;
+        font-size: 2.8vw !important;
+    }
+
+    #opis_filma {
+        height: 32% !important;
+        font-size: 2.3vw !important;
+    }
+
+    #unos_podataka_rez {
+        height: 42.5% !important;
+        width: 65% !important;
+        margin: 0% !important;
+    }
+
+    #sing_up_pod {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0% !important;
+    }
+
+    #email_rez {
+        width: 100% !important;
+        font-size: 1vw !important;
+        margin: 0% !important;
+    }
+
+    #pass_rez {
+        width: 100% !important;
+        font-size: 1vw !important;
+        margin: 0% !important;
+    }
+
+    #rezerviraj_btn {
+        width: 100% !important;
+        font-size: 3vw !important;
+    }
+
+    input#pass_rez {
+        width: 100% !important;
+        font-size: 4vw !important;
+    }
+
+    #label_email {
+        font-size: 3vw !important;
+    }
+
+    #label_pass {
+        font-size: 3vw !important;
+    }
+
+    .bgimg {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #000000;
+        height: 100%;
+    }
+
+    #link_filma {
+        margin: 0 !important;
+        height: auto !important;
+        margin-top: 0 !important;
+    }
+
+    #loading_error {
+        text-align: center;
+        margin: 0;
+    }
+
+    #unos_podataka {
+        margin-top: 40%;
+    }
+
+    #ovaj_tjedan_prikazujemo {
+        margin: 0% 20%;
+        text-align: center;
+        word-spacing: 0.3em;
+        font-size: 1rem;
+    }
+
+    #naziv_filma {
+        font-size: 1rem;
+    }
+
+    #app {
+        width: 100%;
+    }
+}

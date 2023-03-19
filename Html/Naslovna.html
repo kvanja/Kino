@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+
+    <head>
+        <title>Rezervacija kino ulaznica</title>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="../Slike/ikona.jpg" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="../Css/Kino.css">
+        <link rel="stylesheet" href="../Bootstrap-css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script src="../Javascript/Naslovna.js"></script>
+        <script type="text/babel">
+            var napraviNaslov = <div id="ovaj_tjedan_prikazujemo">Ovaj tjedan prikazujemo</div>
+            var destination = document.getElementById("app");
+            ReactDOM.render(napraviNaslov, destination);
+        </script>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar">
+                <a class="active" href="Naslovna.html">Naslovna</a>
+                <a class="rezervacija" href="Rezervacija.html">Rezerviraj</a>
+                <a class="registracija" href="Registracija.html">Registracija</a>
+            </div>
+        </header>
+        <div class="bgimg" id="bg">
+            <div id="app">React se još nije renderirao...</div>
+            <h2 class="film" id="naziv_filma"></h2>
+            <div class="film" id="link_filma">
+            </div>
+            <div>
+                <img src="../Slike/strijelica-lijevo.png" alt="Prev" id="prev" style="margin-left: 48.4%;" />
+                <img src="../Slike//strijelica-desno.png" alt="Next" id="next" />
+                <form method="get" id="rez_sada" action=".\Rezervacija.html#row_tablica"></form>
+            </div>
+        </div>
+    </body>
+
+</html>

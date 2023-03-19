@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html class="registracija" lang="hr">
+<head>
+    <title>Rezervacija kino ulaznica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../Javascript/Registracija.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="icon" href="../Slike/ikona.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="../Css/Kino.css">
+    <link rel="stylesheet" href="../Bootstrap-css/bootstrap.min.css">
+</head>
+<body class="registracija">
+    <audio id="myAudio">
+        <source src="../Zvukovi/Accessdenied.mp3" type="audio/mpeg">
+    </audio>
+    <header>
+        <div clas="container">
+            <nav class="navbar navbar-expand{-sm|-md|-lg|-xl} navbar-expand-lg navbar-light" style="background-color: #000000" id="registracija">
+                <a class="naslovnica_reg" href="Naslovna.html">Naslovna</a>
+                <a class="rezervacija_reg" href="Rezervacija.html">Rezerviraj</a>
+                <a class="active_reg bg-primary ml-auto" href="Registracija.html">Registracija</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid" id="unos_podataka">
+        <div class="container-fluid text-primary border border-primary rounded" id="naslov" style="background-color: #000000; ">Molimo unesite svoje podatke</div>
+    </div>
+    <div class="podaci">
+        <form method="post" id="tablica">
+            <div class="form-group text-white">
+                <label for="ime">Ime:</label>
+                <input type="text" name="ime" class="form-control" id="ime" placeholder="Ime">
+            </div>
+            <div class="form-group text-white">
+                <label for="prezime">Prezime:</label>
+                <input type="text" name="prezime" class="form-control" id="prezime" placeholder="Prezime">
+            </div>
+            <div class="form-group text-white">
+                <label for="email">Email:</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group text-white">
+                <label for="pwd">Password:</label>
+                <input type="password" name="password" class="form-control" id="pwd" placeholder="Password">
+            </div>
+            <div class="checkbox text-white" id="zapamti_moje_podatke">
+                <input type="checkbox" id="zapamti_me" name="zapamti_podatke">
+                <label id="zapamti_podatke" for="zapamti_me">
+                    Zapamti moje podatke
+                </label>
+            </div>
+
+            <div class="container-fluid" id="button-submit">
+                <button type="button" class="container-fluid btn btn-outline-primary text-sm-center" id="submit">
+                    <div id="registriraj_se_txt">
+                        Registriraj se
+                    </div>
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
